@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: black; */
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+main{
+  height: 100vh;
+  width: 100%;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.dark_mode {
+  background-color: #121212;
+  color: #ffffff;
+}
