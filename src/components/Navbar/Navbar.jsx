@@ -8,6 +8,8 @@ const Navbar = () => {
     return localStorage.getItem("darkMode") === "true"; // Persist dark mode state
   });
 
+  const [menu,setMenu]=useState("about");
+
   useEffect(() => {
     if (darkMode) {
       document.body.classList.add("dark_mode");
@@ -20,14 +22,19 @@ const Navbar = () => {
   return (
     <div className='Navmain'>
       <div className='box'>
-        <div className='icon'>dfsd</div>
-        <div className='some'>
-          dfsdfsdfdf
-        </div>
+        <div className='icon'>anil</div>
+        <ul className='navlink'>
+          <a href="#" onClick={()=>setMenu("about")} className={menu==='about'?'active':''}>about</a>
+          <a href="#" onClick={()=>setMenu("experience")} className={menu==='experience'?'active':''}>experience</a>
+          <a href="#" onClick={()=>setMenu("skills")}
+            className={menu==='skills'?'active':''}>skills</a>
+          <a href="#" onClick={()=>setMenu("projects")} className={menu==='projects'?'active':''}>projects</a>
+          <a href="#" onClick={()=>setMenu("contact")} className={menu==='contact' ?'active':''}>contact</a>
+        </ul>
         <div className='connect'>
           <i class="fa-brands fa-linkedin"></i>
           <i class="fa-brands fa-github"></i>
-          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
           <div className='horizantalLine'></div>
 
           {/* ---light and Dark Mode--- */}

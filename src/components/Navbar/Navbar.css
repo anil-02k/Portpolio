@@ -33,11 +33,30 @@
     font-size: 35px;
 }
 
+.navlink{
+    display:flex;
+    gap:15px;
+}
+.navlink a{
+  text-decoration: none !important;
+  color: inherit;
+  font-weight: 500;
+}
+
+.navlink .active{
+  font-weight: bold;
+  background: linear-gradient(90.42deg,#4AB1F1 0.58%,#566CEC 37.22%,#D749AF 73.87%,#FF7C51 112.26%);/* Gradient background */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  background-clip: text;
+  color: transparent;
+}
+
 .connect{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 
 .connect i{
     margin-left: 10px;
@@ -197,15 +216,31 @@
   .sun-moon {
     height: 16.6px;
     width: 16.6px;
-    background-color: #f1c428;
+    background: linear-gradient(90deg, #F1C428, #FF7C51);
+    /* Fallback solid color */
     border-radius: 100%;
-    box-shadow: inset 0.3px 0.8px 0.5px rgba(255, 255, 255, 0.5),
-      inset -0.3px -0.8px 0.5px rgba(0, 0, 0, 0.5), 0.8px 0.8px 1.6px rgba(0, 0, 0, 0.5);
-  
+    box-shadow: 
+      inset 0.3px 0.8px 0.5px rgba(255, 255, 255, 0.5),
+      inset -0.3px -0.8px 0.5px rgba(0, 0, 0, 0.5), 
+      0.8px 0.8px 1.6px rgba(0, 0, 0, 0.5);
     position: absolute;
     left: 1.6px;
     top: 1.6px;
     transition: 300ms ease;
+    overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
+  }
+  
+  .sun-moon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #C5C9D3;
+     /* Gradient applied here */
+    border-radius: 100%; /* Match the parent's border-radius */
+    z-index: -1; /* Place it behind the parent */
   }
   
  
