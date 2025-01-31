@@ -43,10 +43,14 @@
     margin-left: 10px;
 }
 
+
 .horizantalLine{
-    border-left: 2px solid white;
+    border-left: 1.5px solid black;
     height: 19px;;
     margin-left: 10px;
+}
+.dark_mode .horizantalLine{
+    border-left: 1.5px solid white;
 }
 
 
