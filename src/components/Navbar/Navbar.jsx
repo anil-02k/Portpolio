@@ -54,34 +54,34 @@ const Navbar = () => {
           <a href="#" onClick={() => setMenu("contact")} className={menu === 'contact' ? 'active' : ''}>contact</a>
         </ul>
         <div className='connect'>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-github"></i>
-          <i class="fa-brands fa-twitter"></i>
+          <i className="fa-brands fa-linkedin"></i>
+          <i className="fa-brands fa-github"></i>
+          <i className="fa-brands fa-twitter"></i>
           <div className='horizantalLine'></div>
 
           {/* ---light and Dark Mode--- */}
 
-          <label for="toggle" id="toggle-label">
+          <label htmlFor="toggle" id="toggle-label">
             <div id="toggle-div" className={darkMode ? "night" : ""}>
               <input type="checkbox" id="toggle" checked={darkMode}
                 onChange={() => setDarkMode(!darkMode)} />
-              <div class="clouds">
-                <div class="cloud cloud-1"></div>
-                <div class="cloud cloud-2"></div>
-                <div class="cloud cloud-3"></div>
-                <div class="cloud cloud-4"></div>
-                <div class="cloud cloud-5"></div>
+              <div className="clouds">
+                <div className="cloud cloud-1"></div>
+                <div className="cloud cloud-2"></div>
+                <div className="cloud cloud-3"></div>
+                <div className="cloud cloud-4"></div>
+                <div className="cloud cloud-5"></div>
               </div>
-              <div class="backdrops">
-                <div class="backdrop"></div>
+              <div className="backdrops">
+                <div className="backdrop"></div>
               </div>
-              <div class="stars">
-                <div class="star star-1"></div>
-                <div class="star star-2"></div>
-                <div class="star star-3"></div>
+              <div className="stars">
+                <div className="star star-1"></div>
+                <div className="star star-2"></div>
+                <div className="star star-3"></div>
               </div>
-              <div class="sun-moon">
-                <div class="crater"></div>
+              <div className="sun-moon">
+                <div className="crater"></div>
               </div>
             </div>
           </label>
@@ -89,7 +89,7 @@ const Navbar = () => {
           {/* ------ */}
 
           {/* add a functionality of toggle button*/}
-          <i class="fa-solid fa-bars sidebarmenu"></i>
+          <i className="fa-solid fa-bars sidebarmenu"></i>
 
         </div>
       </div>
