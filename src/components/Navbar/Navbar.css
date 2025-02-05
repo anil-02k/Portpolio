@@ -12,10 +12,6 @@
     -webkit-backdrop-filter: blur(5.2px);
 }
 
-.sidebarmenu{
-  display: none;
-}
-
 /* Dark mode adjustments for Navbar */
 .dark_mode .Navmain {
     color: white;
@@ -396,8 +392,32 @@
 /* {------} */
 
 
+
+.btn-menu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  color: white;
+  transition: transform 0.5s ease-in-out; 
+}
+
+.rotate-icon {
+  transition: transform 0.5s ease-in-out;
+}
+
+.fa-xmark {
+  transform: rotate(360deg);
+}
+
+.fa-bars {
+  transform: rotate(0deg);
+}
+
+
 @media(max-width:1350px){
-  .sidebarmenu{
+  .btn-menu{
     display: block;
   }
 
@@ -412,3 +432,7 @@
     width: 100%;
   }
 }
+
+
+
+

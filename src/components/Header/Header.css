@@ -1,0 +1,57 @@
+.headerMain{
+    height: 90vh;
+    width: 80%;
+    margin-top: 10px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerMain p{
+    font-size: 3.3vw;
+    line-height: 4.7vw;
+}
+
+.userImage{
+    /* background-color: red; */
+
+}
+
+.userImage img{
+    object-fit: cover;
+    height: 5vw;
+    border-radius: 30px;
+    width: 3.5vw;
+    animation: rotateZ 5s linear  infinite;
+}
+
+@keyframes rotateZ{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+
+
+
+.year{
+    background-image: url(https://i.pinimg.com/736x/4c/9f/6f/4c9f6f6de75a115ba46e584a623d4533.jpg);
+    background-size: cover;
+    color: white;
+    padding: 1px 15px;
+    border-radius: 35px;
+    display: inline-block;
+}
+
+
+  
+@media(max-width:950px){
+    .headerMain{
+        width: 90%;
+    }
+    
+}

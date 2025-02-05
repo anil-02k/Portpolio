@@ -8,9 +8,15 @@ const Navbar = () => {
     return localStorage.getItem("darkMode") === "true"; // Persist dark mode state
   });
 
-  
-
   const [menu, setMenu] = useState("about");
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+
 
   useEffect(() => {
     if (darkMode) {
@@ -89,7 +95,13 @@ const Navbar = () => {
           {/* ------ */}
 
           {/* add a functionality of toggle button*/}
-          <i className="fa-solid fa-bars sidebarmenu"></i>
+          {/* <i className="fa-solid fa-bars sidebarmenu"></i> */}
+
+          {/* Toggle Button with Dynamic Icon */}
+          <div className="btn-menu" onClick={toggleMenu}>
+            <i className={`fa-solid ${isOpen ? "fa-xmark rotate-icon" : "fa-bars rotate-icon"}`}></i>
+          </div>
+
 
         </div>
       </div>
