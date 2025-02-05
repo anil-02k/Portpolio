@@ -13,10 +13,6 @@
     line-height: 4.7vw;
 }
 
-.userImage{
-    /* background-color: red; */
-
-}
 
 .userImage img{
     object-fit: cover;
