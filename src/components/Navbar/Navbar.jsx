@@ -2,11 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './Navbar.css'
 
 
-const Navbar = () => {
-
-  const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("darkMode") === "true"; // Persist dark mode state
-  });
+const Navbar = ({darkMode,setDarkMode}) => {
 
   const [menu, setMenu] = useState("about");
 
@@ -16,16 +12,6 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-
-
-  useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add("dark_mode");
-    } else {
-      document.body.classList.remove("dark_mode");
-    }
-    localStorage.setItem("darkMode", darkMode); // Store preference
-  }, [darkMode]);
 
   return (
     <div className='Navmain'>

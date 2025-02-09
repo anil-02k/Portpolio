@@ -1,0 +1,62 @@
+
+.rLink a{
+    text-decoration: none;
+    color: #ADDBFF ;
+    border-radius: 100px;
+    border: 2px solid color-mix(in srgb, #096BDE, black 40%);
+    padding-block: 0.375rem;
+    padding-inline: 1.5rem;
+    flex-shrink: 0;
+    padding: 8px 16px 8px 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    height: 67px;
+    width: 335px;
+
+}
+   .resume-icon{
+    border: 2px solid color-mix(in srgb, #096BDE, black 40%);
+    border-radius: 50%;
+   }
+   .resume-icon i{
+    margin: 0.75rem;
+   }
+   
+   .rLink div p{
+    font-size: 14.5px;
+    line-height: 20px;
+    margin: 0 10px;
+   }
+   .rLink div p:nth-child(2){
+    font-weight: 100;
+   }
+   .resume-link{
+    transition: 0.2s ease-in-out, 
+    box-shadow 0.2s ease-in-out, 
+    transform 0.2s ease-in-out;
+   }
+   .resume-link:hover {
+    background: color-mix(in srgb, var(--joy-palette-primary-900, #00153C), transparent 50%);
+    box-shadow: 0 0 100px rgba(0, 21, 60, 0.5); 
+}
+   .resume-link:hover .arrow i {
+    content: "\f101"; /* Unicode for fa-angles-right */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+.arrow{
+    width: 10px;
+    margin-right: 3px;
+}
+.arrow i {
+    transition: transform 0.3s ease-in-out, 
+    content 0.3s ease;
+}
+
+/* Change icon on hover */
+.resume-link:hover .arrow i::before {
+    content: "\f101"; /* Unicode for fa-angles-right */
+}

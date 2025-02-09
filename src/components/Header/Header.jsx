@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 
-const Header = () => {
+const Header = ({darkMode}) => {
   return (
     <div className="headerMain">
       <p>

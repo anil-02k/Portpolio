@@ -37,12 +37,15 @@
 .year{
     background-image: url(https://i.pinimg.com/736x/4c/9f/6f/4c9f6f6de75a115ba46e584a623d4533.jpg);
     background-size: cover;
-    color: white;
+    color:var(--year-text-color, white);
     padding: 1px 15px;
     border-radius: 35px;
     display: inline-block;
 }
 
+.dark_mode {
+    --year-text-color: black;
+  }
 
   
 @media(max-width:950px){
