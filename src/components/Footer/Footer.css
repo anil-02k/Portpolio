@@ -1,7 +1,10 @@
+
 .footerMain{
     height: 100vh;
     width: 100%;
     /* background-color: red */
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    -o-transition: background-color 0.3s, color 0.3s;
     transition: background-color 0.3s, color 0.3s;
     /* position: absolute;
     inset: 0px; */
@@ -10,5 +13,5 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 1400px;
+    /* background-size: contain; */
 }
-

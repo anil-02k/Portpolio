@@ -20,7 +20,6 @@ const App = () => {
   },[darkMode]);
 
   return (
-    <>
     
     <main>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode}/>
@@ -28,7 +27,7 @@ const App = () => {
       <Timeline/>
       <Footer/>
     </main>
-  </>
+  
   )
 }
 

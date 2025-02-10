@@ -3,14 +3,14 @@ import './Ricon.css'
 
 const Ricon = () => {
   return (
-    <div class="rLink">
-        <a href="#" class="resume-link">
-            <div class="resume-icon"><i class="fa-regular fa-address-book"></i></div>
+    <div className="rLink">
+        <a href="#" className="resume-link">
+            <div className="resume-icon"><i className="fa-regular fa-address-book"></i></div>
             <div>
                 <p>Access online resume</p>
                 <p>Dynamic, interactive, & up-to-date</p>
             </div>
-            <div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
+            <div className="arrow"><i className="fa-solid fa-angle-right"></i></div>
         </a>
     </div>
   )

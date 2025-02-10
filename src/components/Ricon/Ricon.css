@@ -18,7 +18,8 @@
 
 }
    .resume-icon{
-    border: 2px solid color-mix(in srgb, #096BDE, black 40%);
+    /* border: 2px solid color-mix(in srgb, #096BDE, black 40%); */
+    border: 2px solid #074a9e;
     border-radius: 50%;
    }
    .resume-icon i{
@@ -40,7 +41,7 @@
    }
    .resume-link:hover {
     background: color-mix(in srgb, var(--joy-palette-primary-900, #00153C), transparent 50%);
-    box-shadow: 0 0 100px rgba(0, 21, 60, 0.5); 
+    box-shadow: 0 0 100px 50px rgba(0, 21, 60, 0.5); 
 }
    .resume-link:hover .arrow i {
     content: "\f101"; /* Unicode for fa-angles-right */
@@ -60,3 +61,4 @@
 .resume-link:hover .arrow i::before {
     content: "\f101"; /* Unicode for fa-angles-right */
 }
+

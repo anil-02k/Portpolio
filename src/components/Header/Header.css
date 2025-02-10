@@ -1,11 +1,18 @@
+
 .headerMain{
     height: 90vh;
     width: 80%;
     margin-top: 10px;
     /* background-color: red; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .headerMain p{
@@ -15,19 +22,34 @@
 
 
 .userImage img{
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 5vw;
     border-radius: 30px;
     width: 3.5vw;
-    animation: rotateZ 5s linear  infinite;
+    -webkit-animation: rotateZ 5s linear  infinite;
+            animation: rotateZ 5s linear  infinite;
+}
+
+@-webkit-keyframes rotateZ{
+    from{
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+    }
+    to{
+        -webkit-transform: rotateY(360deg);
+                transform: rotateY(360deg);
+    }
 }
 
 @keyframes rotateZ{
     from{
-        transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
     }
     to{
-        transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
+                transform: rotateY(360deg);
     }
 }
 
