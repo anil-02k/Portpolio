@@ -24,7 +24,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
   position: absolute;
   inset: 0px;
-  z-index: -100;
+  z-index: -100; 
   background-image: url('/header-gradient.svg');
   background-repeat: no-repeat;
   background-position: center top;
