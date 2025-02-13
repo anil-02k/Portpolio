@@ -5,7 +5,7 @@
     --light-bg: #DDF1FF;
   }
 .timelineMain{
-    min-height: 100vh;
+    min-height: 120vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -14,6 +14,9 @@
     position: relative;
     min-height: 100vh;
     width: 100%;
+}
+.rIcon a{
+    position: relative;
 }
 .rIcon a::before{
     content: "";
@@ -36,31 +39,29 @@
 }
 .timeline{
     width: 3px;
-    height: 80%;
+    height: 91%;
     position: absolute;
-    left: calc(15% - 52.4px);
-    top:10%;
+    left: calc(15% - 50.5px);
+    top:9%;
     background: linear-gradient(rgb(9, 107, 222), rgb(129, 77, 222));;
 }
 
 .wish{
     position: absolute;
     top: 6%;
-    left: calc(15%);
+    left: 15%;
 }
 
 .wish h2{
     font-size: 3.75em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.23em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-block-start: 1.5rem;
+    margin-block-end: 1rem;
 }
 
 .wish h4{
     color: #8f8fa3;
     font-size: 1.6em;
-    margin-block-start: 0.33em;
+    margin-block-start: 0.73em;
     margin-block-end: 1.33em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -127,8 +128,8 @@ h4 .nam:hover{
     color: var(--primary-color, #054DA7); /* Primary text color */
     background: var(--dark-bg, #DDF1FF); /* Dark BG with fallback */
     position: absolute;
-    left: calc(15% - 51.7px);
-    top: 40%;
+    left: calc(15% - 49.5px);
+    top: 32%;
     transform: translateX(-50%);
     border: none;
     outline: rgb(9, 107, 222) solid 2px;
@@ -138,8 +139,8 @@ h4 .nam:hover{
 
   .pon{
     position: absolute;
-    top: 39.6%;
-    left: calc(15%);
+    top: 31.6%;
+    left: 15%;
   }
 
   .pon h2{
@@ -153,10 +154,10 @@ h4 .nam:hover{
   }
 
   .terminal{
-    height: 69%;
+    height: 61%;
     width: 75%;
     background: red;
     position: absolute;
-    top:48%;
+    top:38.5%;
     left: 15%;
   }

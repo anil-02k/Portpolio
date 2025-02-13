@@ -3,7 +3,9 @@ import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Header from './components/Header/Header'
 import Timeline from './components/Timeline/Timeline';
+import Timeline2 from './components/Timeline2/Timeline2';
 import Footer from './components/Footer/Footer';
+import Timeline3 from './components/Timeline3/Timeline3';
 const App = () => {
 
   const [darkMode,setDarkMode]=useState(()=>{
@@ -25,6 +27,8 @@ const App = () => {
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode}/>
       <Header darkMode={darkMode} />
       <Timeline/>
+      <Timeline2/>
+      <Timeline3/>
       <Footer/>
     </main>
   

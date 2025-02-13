@@ -45,13 +45,16 @@ const Timeline = () => {
 
         </div>
         <div className="poi">
-          <i class="fa-solid fa-user"></i>
+          <i className="fa-solid fa-user"></i>
         </div>
         <div className='pon'>
           <h2>Profile <span>Overview</span></h2>
         </div>
         <div className='terminal'>
-
+          <div className='terminalMain'>
+            <div className="top"></div>
+            <div className="bottom"></div>
+          </div>
         </div>
       </div>
     </div>
