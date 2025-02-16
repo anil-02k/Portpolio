@@ -14,10 +14,34 @@
         -ms-flex-pack: center;
             justify-content: center;
 }
+.animatedBg {
+    position: absolute;
+    height: 90vh;
+    width: 80%;
+    background-image: url("https://cdn.prod.website-files.com/6436c2f7a297c7b22d684489/660174097bcc885c700e542e_pc-2-ts%201-p-1080.webp");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: moveRotate 4s infinite alternate ease-in-out;
+  }
+
+  @keyframes moveRotate {
+    0% {
+      transform: translate3d(0px, 0px, 0px) rotate(0deg);
+    }
+    50% {
+      transform: translate3d(-2.2084px, -2.917px, 0px) rotate(0.67deg);
+    }
+    100% {
+      transform: translate3d(5px, 5px, 0px) rotate(-1deg);
+    }
+  }
+  
 
 .headerMain p{
     font-size: 3.3vw;
     line-height: 4.7vw;
+    position: absolute;
 }
 
 

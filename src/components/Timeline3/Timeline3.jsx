@@ -7,7 +7,7 @@ const Timeline3 = () => {
     <div className='timeline3Main'>
       <div className='tm3'>
         <div className='timeline3'>
-        </div>
+        </div> 
       </div>
     </div>
   )

@@ -5,6 +5,9 @@ import "./Header.css";
 const Header = ({darkMode}) => {
   return (
     <div className="headerMain">
+      <div className="animatedBg">
+        
+      </div>
       <p>
         Hi, I am <span className="userImage">
             <img align="top"
