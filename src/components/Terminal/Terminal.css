@@ -1,0 +1,70 @@
+.terminalMain {
+    height: 100%;
+    width: 100%;
+    background-color: #202028;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.top {
+    height: 40px;
+    width: 100%;
+    background-color: #15141B;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.left .active {
+    height: 32px;
+    width: 250px;
+    background-color: #24242D;
+    margin-left: 10px;
+    padding: 1rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    position: relative;
+    gap: 0.75rem 1rem;
+    padding: 0px;
+}
+
+.left .active::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    height: 50%;
+    width: 6px;
+    border-radius: 0px 0px 6px;
+    background-color: transparent;
+    box-shadow:0 5px 0px 0px #25252D
+}
+
+.left .active::after{
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    right:-6px;
+    top: 50%;
+    height: 50%;
+    width: 6px;
+    border-radius: 0 6px 0;
+    box-shadow: 0 5px 0 0 #252525;
+}
+.bottom{
+    height: 100%;
+    width: 100%;
+    background-color: #202028;
+    position: absolute;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+  

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Timeline.css'
 import Ricon from '../Ricon/Ricon'
+import Terminal from '../Terminal/Terminal'
 
 const Timeline = () => {
 
@@ -51,10 +52,7 @@ const Timeline = () => {
           <h2>Profile <span>Overview</span></h2>
         </div>
         <div className='terminal'>
-          <div className='terminalMain'>
-            <div className="top"></div>
-            <div className="bottom"></div>
-          </div>
+          <Terminal/>
         </div>
       </div>
     </div>
