@@ -28,7 +28,7 @@ const Timeline2 = () => {
           </div>
           <div className="rig">
             <button className='proExplore'>
-              Explore More Projects <i class="fa-solid fa-arrow-right"></i>
+              Explore More Projects <i className="fa-solid fa-arrow-right"></i>
             </button>
           </div>
         </div>

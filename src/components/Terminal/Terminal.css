@@ -14,6 +14,10 @@
     justify-content: space-between;
     align-items: end;
 }
+.top .left{
+    display: flex;
+    flex-direction: row;
+}
 
 .left .active {
     height: 32px;
@@ -31,7 +35,16 @@
     border-bottom-left-radius: 0px;
     position: relative;
     gap: 0.75rem 1rem;
-    padding: 0px;
+    padding: 10px;
+}
+
+.mi i{
+    font-size: 10px;
+    margin-right: 12px;
+}
+
+.clo i{
+    font-size: 10px;
 }
 
 .left .active::before {
@@ -66,5 +79,64 @@
     border-bottom-left-radius: 10px;
 }
 
+.top .left .add{
+    display: flex;
+    margin-left: 5px;
+    width: 90px;
+    height: 32px;
+    /* padding-top: 5px; */
+    padding-bottom: 5px;
+}
 
-  
+.left .add button{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #24242D;
+    color: white;
+    border:none
+}
+
+.left .add button:hover{
+    background-color: rgb(143 143 163 / 0.24);
+    cursor: pointer;
+}
+
+.add .ll{
+    font-size: 11px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.add .rr{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.add .ll i{
+    padding:  10px;
+}
+.add .rr i{
+    padding: 10px;
+}
+hr{
+    background-color: rgb(143 143 163 / 0.24);
+    width: 1.25px;
+    border: none;
+}
+
+.top .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.top .right i{
+    padding: 18px;
+}
+
+.top .right i:hover{
+    background-color: rgb(143 143 163 / 0.24);
+    cursor: pointer;
+}
