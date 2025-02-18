@@ -31,7 +31,7 @@ const Terminal = () => {
                 <div className="active">
                   <div className="mi">
                   <i class="fa-solid fa-terminal"></i>
-                  pwsh in anil
+                  pwsh anil
                   </div>
                   <div className="clo" aria-level={labels[hoverCount]} title={labels[hoverCount]} onMouseEnter={handleHover} ><i class="fa-solid fa-x"></i></div>
                 </div>
