@@ -9,7 +9,7 @@ import Timeline3 from './components/Timeline3/Timeline3';
 const App = () => {
 
   const [darkMode,setDarkMode]=useState(()=>{
-    return localStorage.getItem("darkMode")==="true";
+    return localStorage.getItem("darkMode")==="true"  || true;
   });
 
   useEffect(()=>{

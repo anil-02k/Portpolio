@@ -1,11 +1,35 @@
-import React from "react";
+import {React, useEffect} from "react";
 
 import "./Header.css";
 
 const Header = ({darkMode}) => {
+  useEffect(() => {
+  const passion1=document.querySelector(".passion_1");
+  const passion2=document.querySelector(".passion_2");
+  const passion1Outline = document.querySelector(".passion_1_outline");
+  const passion2Outline = document.querySelector(".passion_2_outline a");
+
+
+  passion2.addEventListener("mouseenter",()=>{
+    passion1.style.color="transparent";
+    passion2.style.color="white";
+    passion1Outline.style.display = "none";
+    passion2Outline.style.display = "block";
+    
+  })
+
+  passion2.addEventListener("mouseleave", () => {
+    passion1.style.color = "white";
+    passion2.style.color = "transparent";
+    passion1Outline.style.display = "block";
+    passion2Outline.style.display = "none";
+  })
+  
+}, []);
+
   return (
     <div className="headerMain">
-      <div className="animatedBg">
+      {/* <div className="animatedBg">
         
       </div>
       <p>
@@ -37,7 +61,22 @@ const Header = ({darkMode}) => {
           <i className="fa-solid fa-wand-sparkles"></i>
         </span>
         .
-      </p>
+      </p> */}
+
+      {/* -------- */}
+
+      <div className="herobox">
+        <h3 className="passion_1">Webdesigner</h3>
+        <h3 className="passion_2">& Problem Solver</h3>
+        <div class="herobox_image">
+          <img src="pc.webp" alt="" />
+        </div>
+        <h3 className="passion_1_outline">Webdesigner</h3>
+        <h3 className="passion_2_outline">& Problem Solver</h3>
+      </div>
+
+
+
     </div>
   );
 };

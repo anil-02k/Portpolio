@@ -1,6 +1,9 @@
 :root {
-    --primary-color: #E1CBFF;
-    --dark-bg2: #1D0A42;
+    /* --primary-color: #E1CBFF; */
+    --primary-color: #054DA7;
+
+    /* --dark-bg2: #1D0A42; */
+    --dark-bg2: #00153C;
   }
 .timeline2Main{
     min-height: 100vh;
@@ -19,7 +22,8 @@
     position: absolute;
     left: calc(15% - 50.5px);
     top:0;
-    background: linear-gradient(rgb(129, 77, 222),rgb(154, 103, 0));;
+    /* background: linear-gradient(rgb(129, 77, 222),rgb(154, 103, 0)); */
+    background: linear-gradient(rgb(9, 107, 222) 60%, transparent);
 }
 
 .poi2 {
@@ -29,15 +33,15 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color: var(--primary-color2, #5F35AE); /* Primary text color */
-    background: var(--dark-bg2, #F4EAFF); /* Dark BG with fallback */
+    color: rgb(9, 107, 222); /* Primary text color */
+    background: var(--dark-bg2, #DDF1FF); /* Dark BG with fallback */
     position: absolute;
     left: calc(15% - 49.5px);
     top: 14%;
     transform: translateX(-50%);
     border: none;
-    outline: rgb(129, 77, 222) solid 2px;
-    box-shadow: rgba(163, 116, 249, 0.4) 0px 0px 40px 5px;
+    outline: rgb(9, 107, 222) solid 2px;
+    box-shadow: rgba(57, 144, 255, 0.4) 0px 0px 40px 5px;
   }
   
 
@@ -53,7 +57,7 @@
 
   .pon2 h2 span{
     display: inline;
-    color: rgba(163, 116, 249);
+    color: #3990FF;
     font-weight: bold;
   }
 

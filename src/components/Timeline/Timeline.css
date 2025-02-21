@@ -1,7 +1,9 @@
 :root {
-    --primary-color: #054DA7;
+    /* --primary-color: #054DA7; */
+    --primary-color: #E1CBFF;
     --secondary-color: #ADDBFF;
-    --dark-bg: #00153C;
+    /* --dark-bg: #00153C; */
+    --dark-bg: #1D0A42;
     --light-bg: #DDF1FF;
   }
 .timelineMain{
@@ -26,8 +28,8 @@
     width: 50px;
     height: 70px;
     margin-left: -2px;
-    border-top: 3px solid #096BDE;
-    border-left: 3px solid #096BDE;
+    border-top: 3px solid rgb(129, 77, 222);
+    border-left: 3px solid rgb(129, 77, 222);
     border-top-left-radius: 50px;
     border-bottom: none;
     border-right: none;
@@ -43,7 +45,8 @@
     position: absolute;
     left: calc(15% - 50.5px);
     top:9%;
-    background: linear-gradient(rgb(9, 107, 222), rgb(129, 77, 222));;
+    /* background: linear-gradient(rgb(9, 107, 222), rgb(129, 77, 222)); */
+    background: linear-gradient(rgb(129, 77, 222) 60%,rgb(9, 77, 222));
 }
 
 .wish{
@@ -71,7 +74,8 @@
 .wish h4 .nam{
     margin: 10px;
     display: inline;
-    color: #6fb6ff ;
+    /* color: #6fb6ff ; */
+    color: rgb(195, 165, 247);
     font-weight: bold;
     text-decoration: underline dotted;
 }
@@ -82,7 +86,7 @@ h4 .nam:hover{
 }
 
 .wish h4 .stu {
-    background: linear-gradient(90deg, #6fb6ff, #7873f5, #6fb6ff);
+    background: linear-gradient(90deg, #7873f5, #6fb6ff, #7873f5);
     background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -125,15 +129,15 @@ h4 .nam:hover{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color: var(--primary-color, #054DA7); /* Primary text color */
-    background: var(--dark-bg, #DDF1FF); /* Dark BG with fallback */
+    color: rgb(129, 77, 222); /* Primary text color */
+    background: var(--dark-bg, #F4EAFF); /* Dark BG with fallback */
     position: absolute;
     left: calc(15% - 49.5px);
     top: 32%;
     transform: translateX(-50%);
     border: none;
-    outline: rgb(9, 107, 222) solid 2px;
-    box-shadow: rgba(57, 144, 255, 0.4) 0px 0px 40px 5px;
+    outline: rgb(129, 77, 222) solid 2px;
+    box-shadow:rgba(163, 116, 249, 0.4) 0px 0px 40px 5px; 
   }
   
 
@@ -149,7 +153,7 @@ h4 .nam:hover{
 
   .pon h2 span{
     display: inline;
-    color: #3990FF;
+    color: rgba(163, 116, 249);
     font-weight: bold;
   }
 
