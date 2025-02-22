@@ -112,6 +112,8 @@
   flex-direction: column;
   position: relative;
   height: 100%;
+  width: 100%;
+  /* background-color: red; */
 }
 
 .herobox h3{
@@ -125,7 +127,7 @@
   position: absolute;
   -webkit-text-stroke: 1px white;
   transition: 0.5s ease;
-  color: white;
+  color: transparent;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -137,7 +139,7 @@
   position: absolute;
   -webkit-text-stroke: 1px white;
   transition: 0.5s ease;
-  color: transparent;
+  color: white;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -183,9 +185,10 @@
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
+  
 }
 .herobox .passion_2_outline{
   position: absolute;
@@ -201,3 +204,14 @@
   justify-content: center;
   pointer-events: none;
 }
+
+.circletext{
+  height: 100px;
+  width: 100px;
+  /* background-color: red; */
+  position: absolute;
+  top: 90%;
+  right: 9%;
+  /* left: 4%; */
+}
+

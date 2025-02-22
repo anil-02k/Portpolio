@@ -1,5 +1,8 @@
 import {React, useEffect} from "react";
 
+import CircularText from '../CircularText/CircularText';
+  
+
 import "./Header.css";
 
 const Header = ({darkMode}) => {
@@ -7,22 +10,22 @@ const Header = ({darkMode}) => {
   const passion1=document.querySelector(".passion_1");
   const passion2=document.querySelector(".passion_2");
   const passion1Outline = document.querySelector(".passion_1_outline");
-  const passion2Outline = document.querySelector(".passion_2_outline a");
+  const passion2Outline = document.querySelector(".passion_2_outline");
 
 
   passion2.addEventListener("mouseenter",()=>{
-    passion1.style.color="transparent";
-    passion2.style.color="white";
-    passion1Outline.style.display = "none";
-    passion2Outline.style.display = "block";
+    passion1.style.color="white";
+    passion2.style.color="transparent";
+    passion1Outline.style.display = "block";
+    passion2Outline.style.display = "none";
     
   })
 
   passion2.addEventListener("mouseleave", () => {
-    passion1.style.color = "white";
-    passion2.style.color = "transparent";
-    passion1Outline.style.display = "block";
-    passion2Outline.style.display = "none";
+    passion1.style.color = "transparent";
+    passion2.style.color = "white";
+    passion1Outline.style.display = "none";
+    passion2Outline.style.display = "block";
   })
   
 }, []);
@@ -66,6 +69,15 @@ const Header = ({darkMode}) => {
       {/* -------- */}
 
       <div className="herobox">
+        <div className="circletext">
+          <CircularText
+            text="JUST*A*NOBODY*"
+             onHover="speedUp"
+             spinDuration={20}
+             className="custom-class"
+            />
+         </div>
+        
         <h3 className="passion_1">Webdesigner</h3>
         <h3 className="passion_2">& Problem Solver</h3>
         <div class="herobox_image">
