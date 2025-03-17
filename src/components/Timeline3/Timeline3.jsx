@@ -1,6 +1,6 @@
 import React from 'react'
 import './Timeline3.css'
-import FallingIcons from '../Falling Text/FallingIcons'
+import FallingIcons from '../Falling Icon/FallingIcons'
 
 const Timeline3 = () => {
 
