@@ -1,0 +1,167 @@
+:root {
+    /* --primary-color: #054DA7; */
+    --primary-color: #E1CBFF;
+    --secondary-color: #ADDBFF;
+    /* --dark-bg: #00153C; */
+    --dark-bg: #1D0A42;
+    --light-bg: #DDF1FF;
+  }
+.timelineMain{
+    min-height: 120vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.tm{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+.rIcon a{
+    position: relative;
+}
+.rIcon a::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    width: 50px;
+    height: 70px;
+    margin-left: -2px;
+    border-top: 3px solid rgb(129, 77, 222);
+    border-left: 3px solid rgb(129, 77, 222);
+    border-top-left-radius: 50px;
+    border-bottom: none;
+    border-right: none;
+    background-color: transparent;
+}
+.rIcon{
+    position: absolute;
+    left: 15%;
+}
+.timeline{
+    width: 3px;
+    height: 91%;
+    position: absolute;
+    left: calc(15% - 50.5px);
+    top:9%;
+    /* background: linear-gradient(rgb(9, 107, 222), rgb(129, 77, 222)); */
+    background: linear-gradient(rgb(129, 77, 222) 60%,rgb(9, 77, 222));
+}
+
+.wish{
+    position: absolute;
+    top: 6%;
+    left: 15%;
+}
+
+.wish h2{
+    font-size: 5vw;
+    margin-block-start: 1.5rem;
+    margin-block-end: 1rem;
+}
+
+.wish h4{
+    color: #8f8fa3;
+    font-size: 1.6em;
+    margin-block-start: 0.73em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+.wish h4 .nam{
+    margin: 10px;
+    display: inline;
+    /* color: #6fb6ff ; */
+    color: rgb(195, 165, 247);
+    font-weight: bold;
+    text-decoration: underline dotted;
+}
+
+h4 .nam:hover{
+    text-decoration: underline;
+    
+}
+
+.wish h4 .stu {
+    background: linear-gradient(90deg, #7873f5, #6fb6ff, #7873f5);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    font-weight: bold;
+    margin:10px;
+}
+
+@keyframes shine {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+
+.wish h4 .na{
+  font-weight: bold;
+  color: #8f8fa3;
+  text-decoration: underline dotted;
+  margin: 10px;
+}
+
+.wish h4 .na:hover{
+    text-decoration:underline;
+}
+
+.wish h4 .op{
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+  
+
+.poi {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: rgb(129, 77, 222); /* Primary text color */
+    background: var(--dark-bg, #F4EAFF); /* Dark BG with fallback */
+    position: absolute;
+    left: calc(15% - 49.5px);
+    top: 32%;
+    transform: translateX(-50%);
+    border: none;
+    outline: rgb(129, 77, 222) solid 2px;
+    box-shadow:rgba(163, 116, 249, 0.4) 0px 0px 40px 5px; 
+  }
+  
+
+  .pon{
+    position: absolute;
+    top: 31.6%;
+    left: 15%;
+  }
+
+  .pon h2{
+    font-size: 2.3em;
+  }
+
+  .pon h2 span{
+    display: inline;
+    color: rgba(163, 116, 249);
+    font-weight: bold;
+  }
+
+  .terminal{
+    height: 61%;
+    width: 75%;
+    position: absolute;
+    top:38.5%;
+    left: 15%;
+  }
+  
