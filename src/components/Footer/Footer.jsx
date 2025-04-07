@@ -9,7 +9,7 @@ const Footer = () => {
           <div class="sc-39b358f1-1 hbqXJq">
             <div class="sc-39b358f1-3 bRIkYU">
               <h4>
-                ©2023 <span>✦</span> anil kumar
+                ©2025 <span>✦</span> anil kumar
               </h4>
             </div>
             <div class="sc-39b358f1-2 jLjNdR">
