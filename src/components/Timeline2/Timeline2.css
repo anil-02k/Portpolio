@@ -23,7 +23,7 @@
     left: calc(15% - 50.5px);
     top:0;
     /* background: linear-gradient(rgb(129, 77, 222),rgb(154, 103, 0)); */
-    background: linear-gradient(rgb(9, 107, 222) 60%, transparent);
+    background: linear-gradient(rgb(9, 107, 222) 60%, rgb(191, 135, 0));
 }
 
 .poi2 {
@@ -41,7 +41,7 @@
     transform: translateX(-50%);
     border: none;
     outline: rgb(9, 107, 222) solid 2px;
-    box-shadow: rgba(57, 144, 255, 0.4) 0px 0px 40px 5px;
+    box-shadow: rgb(9, 107, 222) 0px 0px 40px 5px;
   }
   
 
@@ -64,7 +64,7 @@
   .project{
     height: 62%;
     width: 75%;
-    background-color: red;
+    border: 1px solod red;
     position: absolute;
     top:22%;
     left: 15%;

@@ -16,6 +16,7 @@ const Timeline2 = () => {
         </div>
         <div className='project'>
           <div className='projectMain'>
+            
           </div>
         </div>
         <div  className='hl'> 

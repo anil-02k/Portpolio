@@ -1,17 +1,106 @@
-
 .timeline3Main{
     min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
-    /* border-top: 1px solid red; */
+    border-bottom: 1px solid red;
 }
 .tm3{
-    /* position: relative; */
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    height: 500px;
-    width: 70%;
-    /* background-color: red; */
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
 }
+.timeline3{
+    width: 3px;
+    height: 50%;
+    position: absolute;
+    left: calc(15% - 50.5px);
+    top:0;
+    background: linear-gradient(rgb(191, 135, 0),rgb(154, 103, 0));;
+}
+.poi3 {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: rgb(191, 135, 0); /* Primary text color */
+    background: var(--dark-bg2, #DDF1FF); /* Dark BG with fallback */
+    position: absolute;
+    left: calc(15% - 49.5px);
+    top: 14%;
+    transform: translateX(-50%);
+    border: none;
+    outline: rgb(191, 135, 0) solid 2px;
+    box-shadow: rgb(191, 135, 0) 0px 0px 40px 5px;
+  }
+  
+
+  .pon3{
+    position: absolute;
+    top: 13.6%;
+    left: 15%;
+  }
+
+  .pon3 h2{
+    font-size: 2.3em;
+  }
+
+  
+  .pon3 h2 span{
+    display: inline;
+    color: rgb(191, 135, 0);
+    font-weight: bold;
+  }
+
+  .h-line1{
+    position: relative;
+    margin: 80px 50px 0.5rem;
+    height: 3px;
+    width: 68%;
+    left: calc(15% - 20.5px);
+    top: 50%;
+    background: linear-gradient(to right, rgb(154, 103, 0), rgb(26, 125, 54));
+  }
+
+  .h-line1::before{
+    content: '';
+    position: absolute;
+    left: -80px;
+    top: calc(-80px - 1rem);
+    height: calc(80px + 1rem);
+    width: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom: 3.5px solid rgb(154, 103, 0);
+    border-left: 3.5px solid rgb(154, 103, 0);
+    border-image: initial;
+    border-right: none;
+    border-top: none;
+  }
+
+  .h-line1::after{
+    content: "";
+    position: absolute;
+    right: -80px;
+    bottom: -80px;
+    height: 80px;
+    width: 80px;
+    border-top-right-radius: 80px;
+    border-top: 3.5px solid rgb(26, 125, 54);
+    border-right: 3.5px solid rgb(26, 125, 54);
+    border-image: initial;
+    border-left: none;
+    border-bottom: none;
+  }
+
+  .infinite-scroll-section{
+    height: 5.8%;
+  width: 75%;
+  left: 15%;
+  /* border: 1px solid blue; */
+  position: absolute;
+  /* top: 10%; */
+  top: 66.1%;
+  display: flex;  
+  }
