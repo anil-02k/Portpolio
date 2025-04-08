@@ -1,4 +1,4 @@
-import {React, useEffect} from "react";
+ import {React, useEffect} from "react";
 
 import CircularText from '../CircularText/CircularText';
   
@@ -80,7 +80,7 @@ const Header = ({darkMode}) => {
         
         <h3 className="passion_1">Webdesigner</h3>
         <h3 className="passion_2">& Problem Solver</h3>
-        <div class="herobox_image">
+<div className="herobox_image">
           <img src="pc.webp" alt="" />
         </div>
         <h3 className="passion_1_outline">Webdesigner</h3>

@@ -10,7 +10,7 @@ import React from 'react'
          <div className='timeline3'>
          </div>
          <div className="poi3">
-         <i class="fa-solid fa-lightbulb"></i>
+<i className="fa-solid fa-lightbulb"></i>
         </div>
         <div className='pon3'>
           <h2>Techinical <span>skills</span></h2>

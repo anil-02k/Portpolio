@@ -30,10 +30,10 @@ const Terminal = () => {
             <div className="left">
                 <div className="active">
                   <div className="mi">
-                  <i class="fa-solid fa-terminal"></i>
+<i className="fa-solid fa-terminal"></i>
                   pwsh anil
                   </div>
-                  <div className="clo" aria-level={labels[hoverCount]} title={labels[hoverCount]} onMouseEnter={handleHover} ><i class="fa-solid fa-x"></i></div>
+<i className="fa-solid fa-x"></i>
                 </div>
                 <div className="add">
                   <button aria-label={labels[hoverCount]} title={labels[hoverCount]} className='ll' onMouseEnter={handleHover} tabIndex={0}><i className="fa-solid fa-plus" aria-hidden="true"></i></button>
@@ -42,9 +42,9 @@ const Terminal = () => {
                 </div>
             </div>
             <div className="right">
-              <i aria-label={labels[hoverCount]} title={labels[hoverCount]} onMouseEnter={handleHover} class="fa-solid fa-minus"></i>
-              <i aria-label={labels[hoverCount]} title={labels[hoverCount]} onMouseEnter={handleHover} class="fa-regular fa-square"></i>
-              <i aria-label={labels[hoverCount]} title={labels[hoverCount]} onMouseEnter={handleHover} class="fa-solid fa-x"></i>
+<i aria-label={labels[hoverCount]} title={labels[hoverCount]} onMouseEnter={handleHover} className="fa-solid fa-minus"></i>
+<i aria-label={labels[hoverCount]} title={labels[hoverCount]} onMouseEnter={handleHover} className="fa-regular fa-square"></i>
+<i aria-label={labels[hoverCount]} title={labels[hoverCount]} onMouseEnter={handleHover} className="fa-solid fa-x"></i>
             </div>
         </div>
         <div className="bottom"></div>

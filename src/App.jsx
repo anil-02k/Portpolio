@@ -7,6 +7,8 @@ import Timeline2 from './components/Timeline2/Timeline2';
 import Footer from './components/Footer/Footer';
 import Timeline3 from './components/Timeline3/Timeline3';
 import { ChatBot } from './components/Chatbot/Chatbot';
+import ConnectSection from './components/ConnectSection/ConnectSection';
+
 const App = () => {
 
   const [darkMode,setDarkMode]=useState(()=>{
@@ -31,6 +33,7 @@ const App = () => {
       <Timeline/>
       <Timeline2/>
       <Timeline3/>
+      <ConnectSection/>
       <Footer/>
     </main>
   
